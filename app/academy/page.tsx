@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import WhatsAppBtn from '@/components/WhatsAppBtn';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import { motion } from 'framer-motion';
-import { GraduationCap, Lightbulb, Rocket, Code } from 'lucide-react';
+import { GraduationCap, Lightbulb, Rocket, Code, FileText, Presentation, BookOpen, PenTool } from 'lucide-react';
 import Image from 'next/image';
 
 export default function AcademyPage() {
@@ -50,6 +50,45 @@ export default function AcademyPage() {
             <p className="text-gray-400 text-center">Sumérgete en experiencias prácticas y acelera tu aprendizaje.</p>
           </div>
         </motion.div>
+      </section>
+      {/* Servicios de Apoyo para Estudiantes */}
+      <section className="py-16 px-4 max-w-6xl mx-auto w-full">
+        <div className="rounded-2xl bg-white/5 md:bg-gradient-to-br md:from-black md:via-white/5 md:to-black p-10 md:p-16 shadow-xl mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">¿Necesitas ayuda con tus entregas?</h2>
+          <p className="text-center text-gray-300 mb-10 text-lg max-w-2xl mx-auto">Nos encargamos del formato y la investigación para que tú te enfoques en aprender.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="bg-black/70 border border-white/10 rounded-xl p-6 flex flex-col items-center text-center hover:border-primary/40 transition-all">
+              <FileText className="w-10 h-10 text-primary mb-3" />
+              <span className="font-bold text-lg mb-1">Informes y Tesis</span>
+              <p className="text-gray-400 text-sm">Redacción, normas APA, estructura profesional.</p>
+            </div>
+            <div className="bg-black/70 border border-white/10 rounded-xl p-6 flex flex-col items-center text-center hover:border-primary/40 transition-all">
+              <Presentation className="w-10 h-10 text-primary mb-3" />
+              <span className="font-bold text-lg mb-1">Diapositivas de Impacto</span>
+              <p className="text-gray-400 text-sm">Presentaciones visuales en PowerPoint o Canva.</p>
+            </div>
+            <div className="bg-black/70 border border-white/10 rounded-xl p-6 flex flex-col items-center text-center hover:border-primary/40 transition-all">
+              <BookOpen className="w-10 h-10 text-primary mb-3" />
+              <span className="font-bold text-lg mb-1">Investigación</span>
+              <p className="text-gray-400 text-sm">Resúmenes, ensayos y marcos teóricos.</p>
+            </div>
+            <div className="bg-black/70 border border-white/10 rounded-xl p-6 flex flex-col items-center text-center hover:border-primary/40 transition-all">
+              <PenTool className="w-10 h-10 text-primary mb-3" />
+              <span className="font-bold text-lg mb-1">Proyectos Escolares</span>
+              <p className="text-gray-400 text-sm">Ayuda con maquetas, diagramas o tareas técnicas.</p>
+            </div>
+          </div>
+          <div className="flex justify-center mt-10">
+            <a
+              href="https://wa.me/50212345678?text=Hola%2C%20necesito%20ayuda%20con%20una%20tarea..."
+              target="_blank"
+              rel="noopener"
+              className="px-8 py-4 bg-primary text-black font-bold rounded-full shadow-lg text-lg hover:scale-105 transition-transform"
+            >
+              Cotizar mi Tarea
+            </a>
+          </div>
+        </div>
       </section>
       {/* Call to Action */}
       <section className="py-16 flex flex-col items-center justify-center">
